@@ -3,7 +3,7 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="IUP_BMI_Calculator.MainPage"
              xmlns:local="TODO"
-             Title="TODO">
+             Title="BMI Calculator Page">
 
     <ScrollView>
         <StackLayout>

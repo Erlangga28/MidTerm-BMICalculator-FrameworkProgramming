@@ -28,9 +28,22 @@ namespace IUP_BMI_Calculator.Repository
             _dbPath = dbPath;
         }
 
-        public void AddNewBMIResult(string name, double height, double weight, double BMIScore, string BMIResult)
+        public async void AddNewBMIResult(string name, double height, double weight, double BMIScore, string BMIResult)
         {
-            // TODO
+            int result = 0;
+            try
+            {
+           
+
+                // basic validation to ensure a name was entered
+                if (string.IsNullOrEmpty(name))
+                    throw new Exception("");
+
+            }
+            catch (Exception ex)
+            {
+                string.Format("Failed to add {0}. Error: {1}", name, ex.Message);
+            }
         }
     }
 }

@@ -46,15 +46,19 @@ namespace IUP_BMI_Calculator.ViewModel
         [RelayCommand]
         public void Save()
         {
-            // TO DO
-            App.
+
+            if (Save != null)
+                return;
+            
+   
 
         }
 
         [RelayCommand]
         public void Clear()
         {
-            // TODO
+            
+
         }
 
     }
